@@ -1,0 +1,426 @@
+// div,img{
+//   border: 1px solid #000;}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1366px;
+    header{
+    top: 0;
+    z-index: 30;
+    nav{padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     @include iphone{
+        max-width: 390px;
+        height: 72px;
+        padding: 2px 8px;
+        justify-content: space-around;
+        background: #fff;
+        border-bottom: #ffd153 2px solid;}}}
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    width: 1250px;
+    height: 40px;
+    img{width: 100%;
+        height: 100%;}
+    @include iphone{width: 130px;
+    height: 24px;}
+    button{
+        font-size: 16px;
+        font-weight: 300;
+        padding: 8px 20px;
+        background-color: #ff5d50;
+        color: #fff;
+        border: none;
+        border-radius: 22px;
+        cursor: pointer;
+        @include iphone{width: 128px;
+        height: 40px;}}
+}
+
+main{display: block;}
+
+.ball-1{
+    background: url(chatTalker_images/ball01.svg) right no-repeat;
+    width: 138px;
+    height: 380px;
+    position: absolute;
+    top: 589px;
+    z-index: -10;
+    @include iphone{top: 780px;
+    left: -80px;
+    width: 126px;
+    height: 126px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;}}
+
+.ball-2{
+    background: url(chatTalker_images/ball02.svg) no-repeat;
+    background-size: cover;
+    width: 220px;
+    height: 310px;
+    z-index: -10;
+    position: absolute;
+    right: -50px;
+    top: 1750px;
+    @include iphone{top: 3320px;
+    right: 0;
+    max-width: 88px;
+    height: 135px;}
+}
+
+.ball-3{
+    background: url(chatTalker_images/ball03.svg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 2800px;
+    left: 50px;
+    z-index: -10;
+    @include iphone{top: 5080px;
+    left: -76px;
+    width: 153px;
+    height: 153px;}
+}
+
+.bg-home{
+    background: url(chatTalker_images/bg_home.svg)no-repeat;
+    position: absolute;
+    top: 0;
+    right: -80px;
+    width: 65%;
+    height: 768px;
+    z-index: -5;
+    @include iphone {display: none;}
+}
+
+.bg-home-sm{
+    background: url(chatTalker_images/bg_home_sm.svg);
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    width: 350px;
+    height: 300px;
+    z-index: -6;
+    display: none;
+    @include iphone{ 
+    display: block;   
+    position: absolute;
+    top: 450px;
+    left: 30px;
+    width: 350px;
+    height: 255px;
+    z-index: -6;}
+}
+
+.Top{
+    background-color: #56c4c5;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 600;
+    position: fixed;
+    width: 71px;
+    height: 71px;
+    right: 10%;
+    bottom: 2%;
+    z-index: 10;
+    @include iphone{width: 50px;
+    height: 50px;
+    right: 75%;
+    font-size: 14px;}
+}
+
+section{
+    display: block;
+}
+
+.home-banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 120px 100px 141px;
+    @include iphone{margin: 50px auto 80px auto;}
+}
+
+.banner-txt{
+    margin-top: 20%;
+    @include iphone{padding: 0 20px;
+    margin-bottom: 20px;}
+    h2{color: #56c4c5;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    @include iphone{font-size: 16px;}}
+    h3{font-size: 48px;
+        font-weight: 600;
+        margin-top: 20px;
+    @include iphone{font-size: 32px;}}
+    h4{font-size: 20px;
+        font-weight: 300;
+        margin-top: 32px;
+    @include iphone{font-size: 16px;}}}
+
+.banner-img{
+    margin-right: 32px;
+    width: 480px;
+    height: 434px;
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    z-index: -1;
+    @include iphone {max-width: 300px;
+    height: 305px;
+    margin-top: 70%;
+    margin-left: 40%;}
+}
+
+.platform{
+    text-align: center;
+    max-width: 1120px;
+    padding: 25% 16px 0;
+    margin: 0 auto;
+    @include iphone {text-align: center;
+    max-width: 1120px;
+    padding-top: 80%;
+    margin: 0 auto;}
+    h3{font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 60px;}
+}
+
+.platform-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.card{
+    width: 244px;
+    height: 221px;
+    img{width: 120px;
+        height: 120px;
+        margin-bottom: 20px;}
+    h4{font: normal normal bold 24px/35px Noto Sans TC;}
+    h5{font: normal normal normal 16px/24px Noto Sans TC;}
+}
+
+.roles{
+    margin-top: 100px;
+    h6{font: normal normal bold 32px/46px Noto Sans TC;
+    margin-bottom: 15px;}
+    h7{font: normal normal normal 20px/29px Noto Sans TC;}
+}
+
+.roles-container{    
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 14px;}
+
+.role-card{
+    flex-direction: column;
+    max-width: 260px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 8%);
+    background-color: #fff;
+    img{width: 100%;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 10px;}
+    h8{font: normal normal bold 16px/24px Noto Sans TC;
+    color: #56C4C5;}
+    p{font: normal normal normal 16px/24px Noto Sans TC;
+    margin-bottom: 10px;}
+}
+
+.methods{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 100px auto 0 auto;
+    @include iphone{margin-top: 60px;}
+}
+
+.methods-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 50%;
+    margin: 0 auto;
+    @include iphone{margin-top: 32px;
+    gap: 24px;}
+}
+
+.methods-card{
+    width: 200px;
+    height: 280px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 8%);
+    padding-left: 32px;
+    background-color: #fff;
+    h8{font: normal normal bold 18px/26px Noto Sans TC;}
+    p{font: normal normal normal 16px/24px Noto Sans TC;}}
+
+.methods-img{
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 26px 0;
+}
+
+.methods-text{
+    max-width: 50%;
+    margin-top: 165px;
+    margin-right: 188px;
+    @include iphone{ max-width: 100%;
+    margin: 0px 20px;
+    text-align: center;}
+    h2{font: normal normal bold 32px/46px Noto Sans TC;
+    margin-bottom: 18px;}
+    p{font: normal normal normal 18px/26px Noto Sans TC;
+    margin-bottom: 24px;}
+    button{ font-size: 18px;
+    padding: 12px 32px;
+    background-color: #56c4c5;
+    color: #fff;
+    border: 1px solid #56c4c5;
+    border-radius: 27px;}
+}
+
+.evaluate{
+    margin: 100px 10px 100px 10px;
+    @include iphone{margin-top: 60px;
+    max-width: 90%;}
+    h2{font: normal normal bold 32px/46px Noto Sans TC;
+    text-align: center;@include iphone{margin-bottom: 30px;}}
+}
+
+.evalute-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    @include iphone{flex-direction: column;}
+}
+
+.evalute-card{
+    margin-top: 15%;
+    width: 320px;
+    height: 200px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 8%);
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @include iphone{margin-bottom: 30px;}
+}
+
+.user-img{
+    position: absolute;
+    top: -56px;
+    left: 32px;
+    img{width: 80px;
+    height: 80px;
+    border-radius: 50%;}
+}
+
+.user-content-box{
+    margin: 48px 0 24px 15px;
+    width: 288px;
+    h3{font: normal normal normal 16px/24px Noto Sans TC;}
+    p{font: normal normal bold 16px/24px Noto Sans TC;
+    margin-bottom: 8px;}
+}
+
+.user-position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    dots{width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #DDDDDD;}
+}
+
+footer{
+    display: block;
+}
+
+.footer-container{
+    margin-top: 35%;
+    @include iphone{margin-top: 90%;}
+}
+
+.footer-bg{
+    position: absolute;
+    height: 540px;
+    bottom: 0;
+    z-index: -5;
+    img{width: 100%;}
+    @include iphone {display: none;}
+}
+
+.footer-bg-sm{
+    display: none;
+    position: absolute;
+    @include iphone {display: block;
+    position: absolute;
+    bottom: 0;
+    height: 520px;
+    z-index: -5;}
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    h2{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 48px; @include iphone{font-size: 24px;
+    margin-bottom: 24px;}}
+    button{
+    font-size: 18px;
+    padding: 12px 32px;
+    background-color: #56c4c5;
+    color: #fff;
+    border: 1px solid #56c4c5;
+    border-radius: 27px;
+    }
+}
+
+.footer-last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 18px 0;
+    @include iphone{display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 18px 0;}
+}

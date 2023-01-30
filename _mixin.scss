@@ -1,0 +1,9 @@
+@mixin iphone{
+   @media(max-width: 375px){
+      @content;}
+}
+
+@mixin superbig{
+   @media(max-width:1831px){
+      @content;}
+   }
